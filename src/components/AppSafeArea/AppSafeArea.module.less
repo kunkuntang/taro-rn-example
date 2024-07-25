@@ -1,0 +1,17 @@
+.app-safe-area {
+  display: block;
+  width: 100%;
+
+  &__top {
+    padding-top: var(--safe-area-inset-top); /* 兼容 iOS >= 11.2 */
+  }
+
+  &__bottom {
+    padding-bottom: var(--safe-area-inset-bottom); /* 兼容 iOS < 11.2 */
+  }
+
+  &__android {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

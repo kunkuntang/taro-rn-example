@@ -1,4 +1,4 @@
-import { View } from "@tarojs/components"
+import { ScrollView, View } from "@tarojs/components"
 import { PropsWithChildren } from "react"
 import cx from 'classnames/bind'
 
@@ -12,9 +12,9 @@ interface IAppContainerContentProps {
 
 const AppContainerContent = (props: PropsWithChildren<IAppContainerContentProps>) => {
   return (
-    <View style={props?.style ? props.style : ''} className={classNames('app-container-content')}>
+    <ScrollView style={props?.style ? props.style : ''} className={classNames('app-container-content')}>
       {props.children}
-    </View>
+    </ScrollView>
   )
 }
 

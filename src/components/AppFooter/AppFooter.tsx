@@ -29,20 +29,20 @@ function AppFooter(props: PropsWithChildren<IProps>) {
           },
         ])}
         style={{
-          minHeight: pxTransform(props.height || 128),
-          backgroundColor: props.backgroudColor || '#fff',
-          ...(props.customFooterStyle || {})
+          // minHeight: pxTransform(props.height || 128),
+          // backgroundColor: props.backgroudColor || '#fff',
+          // ...(props.customFooterStyle || {})
         }}
       >
         {props.children}
       </View>
-      {!props.isHidePlaceholder && <View
+      {/* {!props.isHidePlaceholder && <View
         className={classNames('app-footer-placehodler')}
         style={{
           height: `calc(env(safe-area-inset-bottom) + ${pxTransform(props.placeholderHeight || props.height || 128)})`,
           backgroundColor: props.placeholderBackgroudColor || 'transparent',
         }}
-      ></View>}
+      ></View>} */}
     </>
   )
 }
