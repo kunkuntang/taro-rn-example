@@ -29,9 +29,9 @@ function AppFooter(props: PropsWithChildren<IProps>) {
           },
         ])}
         style={{
-          // minHeight: pxTransform(props.height || 128),
-          // backgroundColor: props.backgroudColor || '#fff',
-          // ...(props.customFooterStyle || {})
+          minHeight: pxTransform(props.height || 128),
+          backgroundColor: props.backgroudColor || '#fff',
+          ...(props.customFooterStyle || {})
         }}
       >
         {props.children}

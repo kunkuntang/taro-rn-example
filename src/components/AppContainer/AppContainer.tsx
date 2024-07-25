@@ -1,4 +1,4 @@
-import { pxTransform } from '@tarojs/taro'
+import Taro, { pxTransform } from '@tarojs/taro'
 import { CSSProperties, PropsWithChildren } from 'react'
 import cx from 'classnames/bind'
 import { View } from '@tarojs/components'
@@ -7,7 +7,6 @@ import { AppSafeArea } from '../AppSafeArea'
 import { Dimensions, NativeModules, Platform, StatusBar } from 'react-native'
 
 import localStyle from './AppContainer.module.less'
-import Taro from '@tarojs/taro'
 
 const classNames = cx.bind(localStyle)
 
