@@ -1,0 +1,24 @@
+.app-footer-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 128px;
+  // padding-bottom: ~"max(var(--safe-area-inset-bottom), 20px)";
+  padding-bottom: var(--safe-area-inset-bottom);
+  z-index: 99;
+  background-color: #fff;
+}
+
+.app-fixed-footer-container {
+  position: fixed;
+}
+
+.app-footer-placehodler {
+  width: 100%;
+  // height: ~"calc(max(var(--safe-area-inset-bottom), 20px) + 128px)";
+  height: calc(var(--safe-area-inset-bottom) + 128px);
+  flex-grow: 0;
+  flex-shrink: 0;
+}

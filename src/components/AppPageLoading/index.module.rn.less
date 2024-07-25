@@ -1,0 +1,68 @@
+// 样式
+.spin-page {
+  &.__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    // flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  // 蒙层
+  &.__mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.9;
+    color: red;
+  }
+}
+
+.spin-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // background-color: red;
+}
+
+.spin-lading-icon {
+  width: 240px;
+  height: 240px;
+  transform: rotate(0deg);
+}
+.spin-lading-people {
+  position: relative;
+  bottom: -170px;
+  width: 70px;
+  height: 102px;
+  opacity: 0;
+}
+
+.spin-lading {
+  &-container {
+    width: 240px;
+    height: 240px;
+  }
+  &__tips {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: 28px;
+    // font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 36px;
+    text-align: center;
+  }
+  &__desc {
+    font-size: 24px;
+    // font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    line-height: 32px;
+    text-align: center;
+  }
+}
